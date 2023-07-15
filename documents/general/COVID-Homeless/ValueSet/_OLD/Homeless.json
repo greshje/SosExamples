@@ -1,0 +1,61 @@
+{
+  "ConceptSets": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {
+        "VisitOccurrence": {}
+      }
+    ],
+    "ObservationWindow": {
+      "PriorDays": 0,
+      "PostDays": 0
+    },
+    "PrimaryCriteriaLimit": {
+      "Type": "First"
+    }
+  },
+  "AdditionalCriteria": {
+    "Type": "ALL",
+    "CriteriaList": [
+      {
+        "Criteria": {
+          "VisitOccurrence": {
+            "OccurrenceStartDate": {
+              "Value": "2020-01-01",
+              "Op": "gte"
+            }
+          }
+        },
+        "StartWindow": {
+          "Start": {
+            "Coeff": -1
+          },
+          "End": {
+            "Coeff": 1
+          },
+          "UseEventEnd": false
+        },
+        "Occurrence": {
+          "Type": 2,
+          "Count": 1
+        }
+      }
+    ],
+    "DemographicCriteriaList": [],
+    "Groups": []
+  },
+  "QualifiedLimit": {
+    "Type": "First"
+  },
+  "ExpressionLimit": {
+    "Type": "First"
+  },
+  "InclusionRules": [],
+  "CensoringCriteria": [],
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "cdmVersionRange": ">=5.0.0"
+}
