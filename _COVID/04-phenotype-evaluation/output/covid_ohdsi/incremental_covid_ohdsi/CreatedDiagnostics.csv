@@ -1,0 +1,7 @@
+cohortId,task,checksum,timeStamp,comparatorId,targetChecksum,comparatorChecksum
+4,runIncludedSourceConcepts,edb81bad587356d2c35b31ab7ecb9a82,2023-08-12 00:55:35.925845,,,
+5,runIncludedSourceConcepts,b72ffe6c8064deeccd05abee90cc5b0e,2023-08-12 00:55:35.925845,,,
+4,runOrphanConcepts,edb81bad587356d2c35b31ab7ecb9a82,2023-08-12 01:00:28.945138,,,
+5,runOrphanConcepts,b72ffe6c8064deeccd05abee90cc5b0e,2023-08-12 01:00:28.945138,,,
+4,runCohortRelationship,edb81bad587356d2c35b31ab7ecb9a82b72ffe6c8064deeccd05abee90cc5b0e,2023-08-12 01:01:39.280503,5,edb81bad587356d2c35b31ab7ecb9a82,b72ffe6c8064deeccd05abee90cc5b0e
+5,runCohortRelationship,b72ffe6c8064deeccd05abee90cc5b0eedb81bad587356d2c35b31ab7ecb9a82,2023-08-12 01:01:39.280503,4,b72ffe6c8064deeccd05abee90cc5b0e,edb81bad587356d2c35b31ab7ecb9a82

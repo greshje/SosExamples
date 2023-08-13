@@ -1,0 +1,33 @@
+task,startTime,cohortIds,executionTime,parent
+getCdmDataSourceInformation,2023-08-12T04:55:08Z,,1.17460894584656,executeDiagnostics
+observationPeriodDateRange,2023-08-12T04:55:09Z,,2.47508716583252,executeDiagnostics
+getInclusionStats,2023-08-12T04:55:14Z,,0.460602998733521,executeDiagnostics
+getInclusionStats,2023-08-12T04:55:14Z,,0.0018770694732666,executeDiagnostics
+instantiateUniqueConceptSets,2023-08-12T04:55:15Z,,6.30154895782471,runConceptSetDiagnostics
+createConceptCountsTable,2023-08-12T04:55:21Z,,8.17868089675903,runConceptSetDiagnostics
+runIncludedSourceConcepts,2023-08-12T04:55:29Z,,9.96101689338684,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:55:39Z,concept_set- Homeless Condition,56.3654360771179,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:56:37Z,concept_set- Homeless Measurement,20.317794084549,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:56:58Z,concept_set- Homeless Observation,18.3280348777771,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:57:18Z,concept_set- Homeless Procedure,17.6474041938782,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:57:36Z,concept_set- Homeless Visit,17.8763420581818,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:57:56Z,concept_set- Not Homeless - 2023-07-12 (ALL CONCEPTS),17.8941950798035,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:58:15Z,concept_set- Homeless - 2023-07-12 (ALL CONCEPTS),17.2964971065521,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:58:33Z,concept_set- Homeless Condition,17.6986219882965,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:58:52Z,concept_set- Homeless Measurement,17.1448020935059,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:59:11Z,concept_set- Homeless Observation,17.6290068626404,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:59:29Z,concept_set- Homeless Procedure,17.6329941749573,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T04:59:48Z,concept_set- Homeless Visit,19.8162350654602,runConceptSetDiagnostics
+orphanConcepts,2023-08-12T05:00:09Z,concept_set- Homeless - 2023-07-12 (ALL CONCEPTS),17.5931749343872,runConceptSetDiagnostics
+allOrphanConcepts,2023-08-12T04:55:39Z,,4.8239407658577,runConceptSetDiagnostics
+runConceptSetDiagnostics,2023-08-12T04:55:14Z,,5.32260506550471,executeDiagnostics
+executeTimeSeriesDiagnostics,2023-08-12T05:00:34Z,,0.00348877906799316,executeDiagnostics
+executeVisitContextDiagnostics,2023-08-12T05:00:34Z,,0.00237202644348145,executeDiagnostics
+computeIncidenceRates,2023-08-12T05:00:34Z,,0.00317096710205078,executeDiagnostics
+runCohortRelationshipDiagnostics,2023-08-12T05:00:34Z,4;5;5;4,1.0810360511144,executeCohortRelationshipDiagnostics
+executeCohortRelationshipDiagnostics,2023-08-12T05:00:34Z,,1.08380934794744,executeDiagnostics
+executeCohortCharacterization,2023-08-12T05:01:39Z,,0.00391697883605957,executeDiagnostics
+exportConceptInformation,2023-08-12T05:01:39Z,,0.414547920227051,executeDiagnostics
+DeleteConceptIdTable,2023-08-12T05:01:39Z,,1.77290487289429,executeDiagnostics
+executeDiagnostics,2023-08-12T04:55:08Z,,6.55583684841792,
+writeResultsZip,2023-08-12T05:01:41Z,,0.0172009468078613,executeDiagnostics

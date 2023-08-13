@@ -1,0 +1,38 @@
+database_id,start_time,variable_field,value_field
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,timeZone,America/New_York
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,runTime,6.55583684841792
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,runTimeUnits,mins
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,packageDependencySnapShotJson,{}
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,argumentsAtDiagnosticsInitiationJson,"{
+	""runInclusionStatistics"" : true,
+	""runIncludedSourceConcepts"" : true,
+	""runOrphanConcepts"" : true,
+	""runTimeSeries"" : false,
+	""runVisitContext"" : true,
+	""runBreakdownIndexEvents"" : true,
+	""runIncidenceRate"" : true,
+	""runTemporalCohortCharacterization"" : true,
+	""minCellCount"" : 5,
+	""minCharacterizationMean"" : 0.010000000000000000208167,
+	""incremental"" : false,
+	""temporalCovariateSettings"" : [
+		""getDefaultCovariateSettings""
+	]
+}"
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,rversion,R version 4.3.1 (2023-06-16 ucrt)
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,currentPackage,CohortDiagnostics
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,currentPackageVersion,3.2.3
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,sourceDescription,
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,cdmSourceName,
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,sourceReleaseDate,
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,cdmVersion,
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,cdmReleaseDate,
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,vocabularyVersion,
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,datasourceName,covid_ohdsi
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,datasourceDescription,covid_ohdsi
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,vocabularyVersionCdm,
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,observationPeriodMinDate,2020-01-01
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,observationPeriodMaxDate,2023-04-28
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,personsInDatasource,1964683
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,recordsInDatasource,1964683
+covid_ohdsi,TM_2023-08-12 00:55:08.161963,personDaysInDatasource,439169084

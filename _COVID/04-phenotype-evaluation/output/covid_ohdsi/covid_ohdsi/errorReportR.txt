@@ -1,0 +1,56 @@
+Thread: Main
+Message:  no applicable method for 'arrange' applied to an object of class "NULL"
+Level:  FATAL
+Time:  2023-08-12 01:01:52
+
+Stack trace:
+15: h(simpleError(msg, call))
+14: .handleSimpleError(function (condition) 
+{
+    if (is(condition, "error")) {
+        log("FATAL", conditionMessage(condition), echoTo
+13: dplyr::arrange(., sequence)
+12: dataSource$temporalChoices %>% dplyr::arrange(sequence)
+11: OhdsiShinyModules::createCdDatabaseDataSource(connectionHandler = connectionHandler, schema = shinySettings$resultsDatabaseSchema,
+10: ..stacktraceon..({
+    loadShinySettings <- function(configPath) {
+        stopifnot(file.exists(configPath))
+        shinySettings <
+9: eval(exprs, envir)
+8: eval(exprs, envir)
+7: sourceUTF8(basename(globalPath), envir = globalrenv)
+6: force(code)
+5: withr::with_dir(appDir, {
+    sourceUTF8(basename(globalPath), envir = globalrenv)
+})
+4: loadSupport(appDir, renv = sharedEnv, globalrenv = globalenv())
+3: appParts$onStart()
+2: shiny::runApp(appDir = appDir)
+1: launchDiagnosticsExplorer(sqliteDbPath = sqliteDbPath)
+
+R version:
+R version 4.3.1 (2023-06-16 ucrt)
+
+Platform:
+x86_64-w64-mingw32
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- shiny (1.7.4.1)
+- CohortDiagnostics (3.2.3)
+- FeatureExtraction (3.3.0)
+- Andromeda (0.6.3)
+- dplyr (1.1.2)
+- CohortGenerator (0.8.0)
+- R6 (2.5.1)
+- DatabaseConnector (6.2.3)
+
+

@@ -1,0 +1,220 @@
+2023-08-12 00:55:08	[Main thread]	INFO	CohortDiagnostics	executeDiagnostics	The following fields found in the cohortDefinitionSet will be exported in JSON format as part of metadata field of cohort table:     atlasId,     generateStats,     logicDescription
+2023-08-12 00:55:08	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: cohort
+2023-08-12 00:55:08	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Object has no data.
+2023-08-12 00:55:08	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table cohort the following fields: atlasId, cohortId, cohortName, sql, json, logicDescription, generateStats
+2023-08-12 00:55:08	[Main thread]	INFO	CohortDiagnostics	makeDataExportable	 - Unexpected fields found in table cohort - atlasId, logicDescription, generateStats. These fields will be ignored.
+2023-08-12 00:55:08	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	creating D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/cohort.csv
+2023-08-12 00:55:08	[Main thread]	INFO	DatabaseConnector	connectSpark	Connecting using Spark JDBC driver
+2023-08-12 00:55:09	[Main thread]	WARN	CohortDiagnostics	getCdmDataSourceInformation	CDM Source table does not have any records. Metadata on CDM source will be limited.
+2023-08-12 00:55:09	[Main thread]	DEBUG	CohortDiagnostics	executeDiagnostics	Working in incremental mode.
+2023-08-12 00:55:09	[Main thread]	TRACE	CohortDiagnostics	executeDiagnostics	 - Collecting date range from Observational period table.
+2023-08-12 00:55:12	[Main thread]	INFO	CohortDiagnostics	saveDatabaseMetaData	Saving database metadata
+2023-08-12 00:55:12	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: database
+2023-08-12 00:55:12	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Object has no data.
+2023-08-12 00:55:12	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table database the following fields: databaseId, databaseName, description, vocabularyVersionCdm, vocabularyVersion, isMetaAnalysis
+2023-08-12 00:55:12	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	creating D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/database.csv
+2023-08-12 00:55:12	[Main thread]	TRACE	CohortDiagnostics	createConceptTable	Creating concept ID table for tracking concepts used in diagnostics
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	computeCohortCounts	Counting cohort records and subjects
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	getCohortCounts	Counting cohorts took 0.407 secs
+2023-08-12 00:55:14	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: cohort_count
+2023-08-12 00:55:14	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Object has no data.
+2023-08-12 00:55:14	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table cohort_count the following fields: cohortId, cohortEntries, cohortSubjects, databaseId
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	enforceMinCellValue	- Censoring 0 values (0%) from cohortEntries because value below minimum
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	enforceMinCellValue	- Censoring 0 values (0%) from cohortSubjects because value below minimum
+2023-08-12 00:55:14	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	creating D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/cohort_count.csv
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	executeDiagnostics	Found 0 of 2 (0.00%) submitted cohorts instantiated. Beginning cohort diagnostics for instantiated cohorts. 
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	getInclusionStats	Fetching inclusion statistics from files
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	exportConceptSets	Exporting cohort concept sets to csv
+2023-08-12 00:55:14	[Main thread]	WARN	tibble	$.tbl_df	Unknown or uninitialised column: `isSubset`.
+2023-08-12 00:55:14	[Main thread]	WARN	tibble	$.tbl_df	Unknown or uninitialised column: `isSubset`.
+2023-08-12 00:55:14	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: concept_sets
+2023-08-12 00:55:14	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Object has no data.
+2023-08-12 00:55:14	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table concept_sets the following fields: cohortId, conceptSetId, conceptSetSql, conceptSetName, conceptSetExpression, databaseId
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	makeDataExportable	 - Unexpected fields found in table concept_sets - databaseId. These fields will be ignored.
+2023-08-12 00:55:14	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	creating D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/concept_sets.csv
+2023-08-12 00:55:14	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	Starting concept set diagnostics
+2023-08-12 00:55:14	[Main thread]	WARN	tibble	$.tbl_df	Unknown or uninitialised column: `isSubset`.
+2023-08-12 00:55:14	[Main thread]	WARN	tibble	$.tbl_df	Unknown or uninitialised column: `isSubset`.
+2023-08-12 00:55:15	[Main thread]	INFO	CohortDiagnostics	instantiateUniqueConceptSets	Instantiating concept sets
+2023-08-12 00:55:21	[Main thread]	INFO	CohortDiagnostics	createConceptCountsTable	Creating internal concept counts table
+2023-08-12 00:55:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 8.16 secs
+2023-08-12 00:55:29	[Main thread]	INFO	CohortDiagnostics	timeExecution	Fetching included source concepts
+2023-08-12 00:55:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 5.77 secs
+2023-08-12 00:55:35	[Main thread]	WARN	dplyr	signal_warnings	[38;5;232mThere were 2 warnings in `dplyr::summarise()`. The first warning was:[39m [38;5;232m[36mℹ[38;5;232m In argument: `conceptCount = max(.data$conceptCount)`.[39m Caused by warning in `max()`: [33m![39m no non-missing arguments to max; returning -Inf [38;5;232m[36mℹ[38;5;232m Run ]8;;ide:run:dplyr::last_dplyr_warnings()dplyr::last_dplyr_warnings()]8;; to see the 1 remaining warning.[39m
+2023-08-12 00:55:35	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: included_source_concept
+2023-08-12 00:55:35	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table included_source_concept the following fields: databaseId, cohortId, conceptSetId, conceptId, sourceConceptId, conceptCount, conceptSubjects
+2023-08-12 00:55:35	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	appending records to D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/included_source_concept.csv
+2023-08-12 00:55:39	[Main thread]	INFO	CohortDiagnostics	timeExecution	Finding source codes took 9.96 secs
+2023-08-12 00:55:39	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	Finding orphan concepts
+2023-08-12 00:55:39	[Main thread]	TRACE	CohortDiagnostics	runConceptSetDiagnostics	Using internal concept count table.
+2023-08-12 00:55:39	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Condition'
+2023-08-12 00:56:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 50.1 secs
+2023-08-12 00:56:29	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:56:30	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:56:37	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Measurement'
+2023-08-12 00:56:51	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 14.8 secs
+2023-08-12 00:56:51	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:56:52	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:56:58	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Observation'
+2023-08-12 00:57:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12.7 secs
+2023-08-12 00:57:11	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:57:11	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:57:18	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Procedure'
+2023-08-12 00:57:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12.2 secs
+2023-08-12 00:57:30	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:57:30	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:57:36	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Visit'
+2023-08-12 00:57:49	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12.2 secs
+2023-08-12 00:57:49	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:57:49	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:57:56	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Not Homeless - 2023-07-12 (ALL CONCEPTS)'
+2023-08-12 00:58:08	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12.4 secs
+2023-08-12 00:58:08	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:58:08	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:58:15	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless - 2023-07-12 (ALL CONCEPTS)'
+2023-08-12 00:58:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12 secs
+2023-08-12 00:58:27	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:58:27	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:58:33	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Condition'
+2023-08-12 00:58:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12.3 secs
+2023-08-12 00:58:46	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:58:46	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:58:52	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Measurement'
+2023-08-12 00:59:04	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 11.9 secs
+2023-08-12 00:59:04	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:59:04	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:59:11	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Observation'
+2023-08-12 00:59:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12.3 secs
+2023-08-12 00:59:23	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:59:23	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:59:29	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Procedure'
+2023-08-12 00:59:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12.1 secs
+2023-08-12 00:59:42	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 00:59:42	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 00:59:48	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless Visit'
+2023-08-12 01:00:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 13.6 secs
+2023-08-12 01:00:02	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 01:00:02	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 01:00:09	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	- Finding orphan concepts for concept set 'Homeless - 2023-07-12 (ALL CONCEPTS)'
+2023-08-12 01:00:22	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 12.2 secs
+2023-08-12 01:00:22	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Fetching orphan concepts from server
+2023-08-12 01:00:22	[Main thread]	TRACE	CohortDiagnostics	.findOrphanConcepts	- Dropping orphan temp tables
+2023-08-12 01:00:28	[Main thread]	WARN	dplyr	signal_warnings	[38;5;232mThere were 2 warnings in `dplyr::summarise()`. The first warning was:[39m [38;5;232m[36mℹ[38;5;232m In argument: `conceptCount = max(conceptCount)`.[39m Caused by warning in `max()`: [33m![39m no non-missing arguments to max; returning -Inf [38;5;232m[36mℹ[38;5;232m Run ]8;;ide:run:dplyr::last_dplyr_warnings()dplyr::last_dplyr_warnings()]8;; to see the 1 remaining warning.[39m
+2023-08-12 01:00:28	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: orphan_concept
+2023-08-12 01:00:28	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table orphan_concept the following fields: cohortId, conceptSetId, conceptId, conceptCount, conceptSubjects, databaseId
+2023-08-12 01:00:28	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	appending records to D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/orphan_concept.csv
+2023-08-12 01:00:28	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	Finding orphan concepts took 4.82 mins
+2023-08-12 01:00:30	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: resolved_concepts
+2023-08-12 01:00:30	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table resolved_concepts the following fields: cohortId, conceptSetId, conceptId, databaseId
+2023-08-12 01:00:30	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	appending records to D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/resolved_concepts.csv
+2023-08-12 01:00:30	[Main thread]	TRACE	CohortDiagnostics	runConceptSetDiagnostics	Dropping temp concept set table
+2023-08-12 01:00:31	[Main thread]	TRACE	CohortDiagnostics	runConceptSetDiagnostics	Dropping temp concept count table
+2023-08-12 01:00:34	[Main thread]	INFO	CohortDiagnostics	runConceptSetDiagnostics	Running concept set diagnostics took 5.32 mins
+2023-08-12 01:00:34	[Main thread]	INFO	CohortDiagnostics	executeVisitContextDiagnostics	Retrieving visit context for index dates
+2023-08-12 01:00:34	[Main thread]	INFO	CohortDiagnostics	computeIncidenceRates	Computing incidence rates
+2023-08-12 01:00:34	[Main thread]	INFO	CohortDiagnostics	computeIncidenceRates	Running Incidence Rate took 0.00176 secs
+2023-08-12 01:00:34	[Main thread]	INFO	CohortDiagnostics	executeCohortRelationshipDiagnostics	Computing Cohort Relationship
+2023-08-12 01:00:34	[Main thread]	TRACE	CohortDiagnostics	executeCohortRelationshipDiagnostics	 - Beginning Cohort Relationship SQL
+2023-08-12 01:00:34	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	   - Creating Andromeda object to collect results
+2023-08-12 01:00:34	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	   - Working with 10 time ids.
+2023-08-12 01:00:34	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on -9,999 to 0 days (1 of 10)
+2023-08-12 01:00:40	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 5.69 secs
+2023-08-12 01:00:40	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on -9,999 to 9,999 days (2 of 10)
+2023-08-12 01:00:47	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 6.4 secs
+2023-08-12 01:00:47	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on -365 to -31 days (3 of 10)
+2023-08-12 01:00:53	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 5.97 secs
+2023-08-12 01:00:54	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on -365 to 0 days (4 of 10)
+2023-08-12 01:01:00	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 6.08 secs
+2023-08-12 01:01:00	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on -180 to 0 days (5 of 10)
+2023-08-12 01:01:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 6.12 secs
+2023-08-12 01:01:07	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on -30 to -1 days (6 of 10)
+2023-08-12 01:01:13	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 5.91 secs
+2023-08-12 01:01:13	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on -30 to 0 days (7 of 10)
+2023-08-12 01:01:19	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 6.31 secs
+2023-08-12 01:01:20	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on 0 to 0 days (8 of 10)
+2023-08-12 01:01:26	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 5.98 secs
+2023-08-12 01:01:26	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on 1 to 30 days (9 of 10)
+2023-08-12 01:01:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 5.96 secs
+2023-08-12 01:01:32	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	       - Working on 31 to 365 days (10 of 10)
+2023-08-12 01:01:38	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 5.89 secs
+2023-08-12 01:01:39	[Main thread]	TRACE	CohortDiagnostics	runCohortRelationshipDiagnostics	   - Computing cohort relationship took 1.08 mins
+2023-08-12 01:01:39	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: cohort_relationships
+2023-08-12 01:01:39	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table cohort_relationships the following fields: cohortId, comparatorCohortId, subjects, subCsBeforeTs, recCsBeforeTs, subCsOnTs, recCsOnTs, subCsAfterTs, recCsAfterTs, subCsBeforeTe, recCsBeforeTe, subCsOnTe, recCsOnTe, subCsAfterTe, recCsAfterTe, subCsWindowT, recCsWindowT, subCeWindowT, recCeWindowT, subCsWindowTs, recCsWindowTs, subCsWindowTe, recCsWindowTe, subCeWindowTs, recCeWindowTs, subCeWindowTe, recCeWindowTe, subCWithinT, recCWithinT, cDaysBeforeTs, cDaysBeforeTe, cDaysWithinTDays, cDaysAfterTs, cDaysAfterTe, tDays, cDays, startDay, endDay, databaseId
+2023-08-12 01:01:39	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	appending records to D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/cohort_relationships.csv
+2023-08-12 01:01:39	[Main thread]	INFO	CohortDiagnostics	executeCohortRelationshipDiagnostics	    - Running Cohort Relationship iteration with batchsize 500 from row number 1 to 2 took 1.08 mins
+2023-08-12 01:01:39	[Main thread]	INFO	CohortDiagnostics	executeCohortRelationshipDiagnostics	 - Computing cohort relationships took 1.08 mins
+2023-08-12 01:01:39	[Main thread]	INFO	CohortDiagnostics	executeCohortCharacterization	Running Temporal Cohort characterization
+2023-08-12 01:01:39	[Main thread]	INFO	CohortDiagnostics	executeCohortCharacterization	Running Temporal Cohort characterization took0.00204 secs
+2023-08-12 01:01:39	[Main thread]	INFO	CohortDiagnostics	exportConceptInformation	Retrieving concept information
+2023-08-12 01:01:39	[Main thread]	INFO	CohortDiagnostics	exportConceptInformation	Incremental mode, no additional concept information to export.
+2023-08-12 01:01:39	[Main thread]	TRACE	CohortDiagnostics	executeDiagnostics	Deleting concept ID table
+2023-08-12 01:01:41	[Main thread]	INFO	CohortDiagnostics	executeDiagnostics	Retrieving metadata information and writing metadata
+2023-08-12 01:01:41	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	 - Ensuring data is exportable: metadata
+2023-08-12 01:01:41	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Object has no data.
+2023-08-12 01:01:41	[Main thread]	TRACE	CohortDiagnostics	makeDataExportable	  - Found in table metadata the following fields: databaseId, startTime, variableField, valueField
+2023-08-12 01:01:41	[Main thread]	DEBUG	CohortDiagnostics	writeToCsv.default	appending records to D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/metadata.csv
+2023-08-12 01:01:41	[Main thread]	INFO	CohortDiagnostics	writeResultsZip	Adding results to zip file
+2023-08-12 01:01:41	[Main thread]	INFO	CohortDiagnostics	writeResultsZip	Results are ready for sharing at: D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/Results_covid_ohdsi.zip
+2023-08-12 01:01:41	[Main thread]	INFO	CohortDiagnostics	executeDiagnostics	Computing all diagnostics took 6.56 mins
+2023-08-12 01:01:41	[Main thread]	INFO	DatabaseConnector	connectSqlite	Connecting using SQLite driver
+2023-08-12 01:01:41	[Main thread]	INFO	DatabaseConnector	connectSqlite	Connecting using SQLite driver
+2023-08-12 01:01:41	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0643 secs
+2023-08-12 01:01:41	[Main thread]	INFO	CohortDiagnostics	migrateDataModel	Migrating data set
+2023-08-12 01:01:41	[Main thread]	INFO	ResultModelManager	logInfo	Migrator using SQL files in CohortDiagnostics
+2023-08-12 01:01:41	[Main thread]	INFO	DatabaseConnector	connectSqlite	Connecting using SQLite driver
+2023-08-12 01:01:41	[Main thread]	INFO	ResultModelManager	logInfo	Creating migrations table
+2023-08-12 01:01:41	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00467 secs
+2023-08-12 01:01:41	[Main thread]	INFO	ResultModelManager	logInfo	Migrations table created
+2023-08-12 01:01:41	[Main thread]	INFO	ResultModelManager	logInfo	Executing migration: Migration_1-v3_1_0_time_id.sql
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00615 secs
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Saving migration: Migration_1-v3_1_0_time_id.sql
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00418 secs
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Migration complete Migration_1-v3_1_0_time_id.sql
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Executing migration: Migration_2-v3_1_0_ir_person_years.sql
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.0107 secs
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Saving migration: Migration_2-v3_1_0_ir_person_years.sql
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00484 secs
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Migration complete Migration_2-v3_1_0_ir_person_years.sql
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Executing migration: Migration_3-v3_2_0_suport_cohort_subsets.sql
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00884 secs
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Saving migration: Migration_3-v3_2_0_suport_cohort_subsets.sql
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00622 secs
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Migration complete Migration_3-v3_2_0_suport_cohort_subsets.sql
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Executing migration: Migration_4-v3_2_1_cohort_name_field.sql
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00934 secs
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Saving migration: Migration_4-v3_2_1_cohort_name_field.sql
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00465 secs
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	logInfo	Migration complete Migration_4-v3_2_1_cohort_name_field.sql
+2023-08-12 01:01:42	[Main thread]	INFO	CohortDiagnostics	migrateDataModel	Updating version number
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	connectSqlite	Connecting using SQLite driver
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00652 secs
+2023-08-12 01:01:42	[Main thread]	INFO	CohortDiagnostics	uploadResults	Unzipping D:\_YES_2023-05-28\workspace\SosExamples\_COVID\04-phenotype-evaluation\output\covid_ohdsi\covid_ohdsi/Results_covid_ohdsi.zip
+2023-08-12 01:01:42	[Main thread]	INFO	DatabaseConnector	connectSqlite	Connecting using SQLite driver
+2023-08-12 01:01:42	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: cohort.csv to table: cohort
+2023-08-12 01:01:43	[Main thread]	INFO	ResultModelManager	callback	- Preparing to upload rows 1 through 2
+2023-08-12 01:01:43	[Main thread]	INFO	DatabaseConnector	insertTable.DatabaseConnectorDbiConnection	Inserting data took 0.0223 secs
+2023-08-12 01:01:43	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: cohort_count.csv to table: cohort_count
+2023-08-12 01:01:43	[Main thread]	INFO	ResultModelManager	callback	- Preparing to upload rows 1 through 2
+2023-08-12 01:01:43	[Main thread]	INFO	DatabaseConnector	insertTable.DatabaseConnectorDbiConnection	Inserting data took 0.00865 secs
+2023-08-12 01:01:43	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: cohort_relationships.csv to table: cohort_relationships
+2023-08-12 01:01:49	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: concept_sets.csv to table: concept_sets
+2023-08-12 01:01:49	[Main thread]	INFO	ResultModelManager	callback	- Preparing to upload rows 1 through 13
+2023-08-12 01:01:49	[Main thread]	DEBUG	ResultModelManager	checkAndFixDataTypes	Column concept_set_id in table concept_sets in results folder C:\Users\gresh\AppData\Local\Temp\Rtmp8SAzGb\unzipTempFolder1112447cb490a is of type numeric, but was expecting int. Attempting to convert.
+2023-08-12 01:01:49	[Main thread]	INFO	DatabaseConnector	insertTable.DatabaseConnectorDbiConnection	Inserting data took 0.0169 secs
+2023-08-12 01:01:49	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: database.csv to table: database
+2023-08-12 01:01:50	[Main thread]	INFO	ResultModelManager	callback	- Preparing to upload rows 1 through 1
+2023-08-12 01:01:50	[Main thread]	DEBUG	ResultModelManager	checkAndFixDataTypes	Column is_meta_analysis in table database in results folder C:\Users\gresh\AppData\Local\Temp\Rtmp8SAzGb\unzipTempFolder1112447cb490a is of type numeric, but was expecting varchar. Attempting to convert.
+2023-08-12 01:01:50	[Main thread]	DEBUG	ResultModelManager	checkAndFixDataTypes	Column vocabulary_version in table database in results folder C:\Users\gresh\AppData\Local\Temp\Rtmp8SAzGb\unzipTempFolder1112447cb490a is of type logical, but was expecting varchar. Attempting to convert.
+2023-08-12 01:01:50	[Main thread]	DEBUG	ResultModelManager	checkAndFixDataTypes	Column vocabulary_version_cdm in table database in results folder C:\Users\gresh\AppData\Local\Temp\Rtmp8SAzGb\unzipTempFolder1112447cb490a is of type logical, but was expecting varchar. Attempting to convert.
+2023-08-12 01:01:50	[Main thread]	WARN	DatabaseConnector	isSqlReservedWord	database is a reserved keyword in SQL and should not be used as a table or field name.
+2023-08-12 01:01:50	[Main thread]	INFO	DatabaseConnector	insertTable.DatabaseConnectorDbiConnection	Inserting data took 0.0114 secs
+2023-08-12 01:01:50	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: included_source_concept.csv to table: included_source_concept
+2023-08-12 01:01:50	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: metadata.csv to table: metadata
+2023-08-12 01:01:50	[Main thread]	INFO	ResultModelManager	callback	- Preparing to upload rows 1 through 22
+2023-08-12 01:01:50	[Main thread]	INFO	DatabaseConnector	insertTable.DatabaseConnectorDbiConnection	Inserting data took 0.00926 secs
+2023-08-12 01:01:50	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: orphan_concept.csv to table: orphan_concept
+2023-08-12 01:01:51	[Main thread]	INFO	ResultModelManager	FUN	Uploading file: resolved_concepts.csv to table: resolved_concepts
+2023-08-12 01:01:51	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.00918 secs
+2023-08-12 01:01:51	[Main thread]	INFO	shiny	runApp	Loading required package: shiny 
+2023-08-12 01:01:51	[Main thread]	INFO	DatabaseConnector	connectSqlite	Connecting using SQLite driver
+2023-08-12 01:01:52	[Main thread]	FATAL	dplyr	arrange	no applicable method for 'arrange' applied to an object of class "NULL"
